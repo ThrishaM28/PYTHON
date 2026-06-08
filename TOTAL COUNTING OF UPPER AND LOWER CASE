@@ -1,0 +1,11 @@
+n="t"
+up=0
+lw=0
+while(n not in "A,E,I,O,U,a,e,i,o,u"):
+    n=input("Enter a character: ")
+    if(n.isupper()):
+        up=up+1
+    else:
+        lw=lw+1
+print("TOTAL UPPER CHARACTERS:",up)
+print("TOTAL LOWER CHARACTER:",lw)
