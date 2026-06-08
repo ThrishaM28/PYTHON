@@ -1,0 +1,6 @@
+n=10
+sum=0
+while(n!=0):
+    n=int(input("Enter the Amount: "))
+    sum=sum+n 
+print("The Total Sum amount is: ",sum)
