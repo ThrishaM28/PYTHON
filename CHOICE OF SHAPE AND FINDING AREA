@@ -1,0 +1,42 @@
+def sq():
+    s=int(input("Enter the side:"))
+    print(s*s)
+    
+def rect(l,b):
+    return l*b
+    
+def tri(bs,ht):
+    return 0.5*bs*ht
+
+def cir(r):
+    return 3.14*r*r
+    print(r)
+
+print("1. SQUARE")
+print("2. RECTANGLE")
+print("3. TRIANGE")
+print("4. CIRCLE")
+ch=int(input("Enter your choice of shape: "))
+
+if(ch==1):
+    sq()
+
+if(ch==2):
+    
+    l=int(input("Enter the length: "))
+    b=int(input("Enter the breadth: "))
+    x=rect(l,b)
+    print(x)
+
+if(ch==3):
+    
+    bs=int(input("Enter the base: "))
+    ht=int(input("Enter the height: "))
+    y=tri(bs,ht)
+    print(y)
+
+if(ch==4):
+    r=int(input("Enter the radius: "))
+    cir(r)
+    print(3.14*r*r)
+    
