@@ -7,4 +7,4 @@ c=0
 for i in b.values():
     if i>1:
         c=c+1
-    print(i)
+print(c)
