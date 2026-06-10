@@ -6,6 +6,8 @@ for i in range(5):
     if marks[i]>40:
         print("{}. {} has scored {}%".format(pos,names[i],marks[i]))
         pos=pos+1
+print("______________________________________________")
+
 for j in range(5):
     if marks[j]<40:
         print("{}. {} has scored {}%".format(pas,names[j],marks[j]))
