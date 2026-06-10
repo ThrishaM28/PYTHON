@@ -1,0 +1,6 @@
+names=["Ram", "Madhu", "John", "Divya", "Mani"]
+age=[28, 19, 45, 36, 60]
+merge=list(zip(age,names))
+x=sorted(merge,reverse=True)
+for i in range(5):
+    print("Rank {} : {} - {} years old".format((i+1),x[i][1],x[i][0]))
