@@ -8,8 +8,8 @@ def gcd(a,b):
         a=temp
     return a
 n=int(input("Enter the number: "))
-for a in range(2,21):
-    for b in range(2,21):
-        for c in range(2,21):
+for a in range(2,n):
+    for b in range(2,a):
+        for c in range(2,b):
             if (c*c+b*b==a*a and cop(a,b) and cop(b,c) and (a,c)):
                 print(a,b,c)
