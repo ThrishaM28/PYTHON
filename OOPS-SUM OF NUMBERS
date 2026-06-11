@@ -1,0 +1,17 @@
+class SUM:
+    dept="IT"
+    def get_sum(self):
+        x=int(input("Enter the number1: "))
+        y=int(input("Enter the number2: "))
+        self.a=x 
+        self.b=y
+    def display(self):
+        print("The Sum is ",self.a+self.b)
+        print(SUM.dept)
+
+a1=SUM()
+a2=SUM()
+a1.get_sum()
+a1.display()
+a2.get_sum()
+a2.display()
