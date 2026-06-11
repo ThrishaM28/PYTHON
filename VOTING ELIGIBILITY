@@ -1,0 +1,11 @@
+a=input("Enter the Name: ")
+b=int(input("Enter your Age: "))
+c=input("Enter your Gender: ")
+if(b<=18 and b>=60):
+    print("NO")
+elif(c=='M' and b>=30):
+    print("YES,eligible")
+elif(c=='F' and b>=18):
+    print("YES,Eligible")
+else:
+    print("NO")
