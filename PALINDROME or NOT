@@ -1,0 +1,8 @@
+class Solution(object):
+    def isPalindrome(self, s):
+        x=s.lower()
+        y= " ".join(i for i in x if i.isalnum())
+        if y==y[::-1]:
+            return True
+        else:
+            return False
