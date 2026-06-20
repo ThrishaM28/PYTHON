@@ -1,0 +1,17 @@
+import random
+d=random.randint(1,10)
+print(d)
+
+c=random.random()
+print(c)
+
+x=[1,2,3,4,5,6,7]
+b=random.choice(x)
+print(b)
+
+e=random.sample(x,6)
+print(e)
+
+import random
+b=list(map(lambda x:random.randint(100,200),range(10)))
+print(b)
