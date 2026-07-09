@@ -1,0 +1,39 @@
+import random
+l=[]
+while(len(l)<6):
+    n=random.randint(1,11)
+    if n not in l:
+        l.append(n)
+
+t1=input("ENTER PLAYER 1 NAME:")
+t2=input("ENTER PLAYER 2 NAME:")
+
+p1=[]
+p2=[]
+c=0
+d=0
+for i in range(3):
+    p1=int(input("Enter Player 1 num:"))
+    if p1 in l:
+        print("PLAYER 1 GUESS IS CORRECT")
+        c=c+1
+    else:
+        print("PLAYER 1 IS WRONG")
+        
+    p2=int(input("Enter Player 2 num:"))
+    if p2 in l:
+        print("PLAYER 2 GUESS IS CORRECT")
+        d=d+1
+    else:
+        print("PLAYER 2 IS WRONG")
+    
+if c>d:
+    print("PLAYER 1 WINS")
+else:
+    print("PLAYER 2 WINS")
+    
+    
+print("PLAYER 1 SCORE:",c)
+print("PLAYER 2 SCORE:",d)
+print()
+print(l)
